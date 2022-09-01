@@ -65,7 +65,7 @@ export default function Home() {
           </h1>
           {loading ? (
             <a href="#" className={styles.card}>
-              <Image src="/loader.gif" />
+              <Image src="/loader.gif" alt="loading" width={10} height={10}/>
             </a>
           ) : (
             <form className={styles.cardForm} onSubmit={addTodo}>
