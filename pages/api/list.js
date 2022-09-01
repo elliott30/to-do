@@ -1,5 +1,5 @@
 export default async (req, res) => {
-    const token = process.env.UPSTASH_TOKEN;
+    const token = process.env.TOKEN;
     const url = "https://us1-brave-bee-38177.upstash.io/lrange/todo/0/100?_token=" + token;
   
     return fetch(url)

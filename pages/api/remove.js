@@ -4,7 +4,7 @@ export default async (req, res) => {
     }
     let todo = encodeURI(req.query.todo);
   
-    const token = process.env.UPSTASH_TOKEN;
+    const token = process.env.TOKEN;
     const url = "https://us1-brave-bee-38177.upstash.io/lrem/todo/1/" + todo + "?_token=" + token;
   
     return fetch(url)
